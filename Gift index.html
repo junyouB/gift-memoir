@@ -1,6 +1,6 @@
 <html>
 <head>
-    <link rel="stylesheet" href="/Gift website.css">
+    <link rel="stylesheet" href="Gift website.css">
 </head>    
 <body>
     <div><a id="a1" class="button"><span>3D!?</span></a></div>
@@ -64,7 +64,7 @@
             }
             document.getElementById("a1").onclick = function() {
             if(bcpt1===1) {
-                location.href="/Gift index look.html";
+                location.href="Gift index look.html";
                 sessionStorage.setItem('title','初识与3D');
                 sessionStorage.setItem('text1',"最初见到的时候，我们还有些紧张，但您向我们展示了许多Scratch做的游戏，是我们挺震撼的，于是我们开始研究3d。");
                 sessionStorage.setItem('text2',"映射3D，主要通过在平面大地图上的模拟，测量角色到墙壁的距离并记录在列表里，再通过一定比例投射到屏幕（近大远小），即用画笔一条条画下。从而形成将2D转化为3D的效果。");
@@ -72,13 +72,13 @@
                 sessionStorage.setItem('text4',"");
                 sessionStorage.setItem('picture','p1');
             } else {
-                location.href="/Gift Game.html";
+                location.href="Gift Game.html";
                 sessionStorage.setItem('id','猜数字1');
             }
             };
             document.getElementById("a2").onclick = function() {
             if(bcpt1===1) {
-                location.href="/Gift index look.html";
+                location.href="Gift index look.html";
                 sessionStorage.setItem('title','排序———归并排序，快速排序，插入排序。');
                 sessionStorage.setItem('text1',"归并排序是一种稳定的排序方法，您用了扑克牌来帮助我们理解，操作是把数组拆分成左右两个小块，把左右数组比较，按序插入到新数组里，不停完成每两个小块的拼合，最后完成大数组的排序。");
                 sessionStorage.setItem('text2',"快速排序是对冒泡排序的一种改进，您讲快速排序用了扑克牌的方法，流程是取出队头的元素（key），然后把数组分为两部分，比key小的元素，比key大的元素，每部分再单独按此方式排序。");
@@ -91,7 +91,7 @@
             };
             document.getElementById("a3").onclick = function() {
             if(bcpt2===1) {
-                location.href="/Gift index look.html";
+                location.href="Gift index look.html";
                 sessionStorage.setItem('title','千奇百怪的Bug');
                 sessionStorage.setItem('text1',"1，竞态条件，当两段程序同时运行时，要注意，同时读，设数据会导致冲突。如，大地图脚本中，x变量和y变量，一边在重复更新，一边在重复使用，产生冲突，导致角色碰到墙壁时会卡住。解决方法：省去变量转换，将所有的代码连起来。");
                 sessionStorage.setItem('text2',"2，比较错误：当用角色方向进行加减再比较时，很容易出现比较错误的情况，因为scratch的方向进制与平时不同。解决方法：让角色提前面向加完以后的方向，等于提前换算。");
@@ -100,7 +100,7 @@
                 sessionStorage.setItem('picture','p3');
             } else {
                 if(bcpt1 === 1) {
-                location.href="/Gift Game.html";
+                location.href="Gift Game.html";
                 sessionStorage.setItem('id','猜数字2');
                 } else {
                     alert("请先解锁前面的关卡")
@@ -109,7 +109,7 @@
             };
             document.getElementById("a4").onclick = function() {
             if(bcpt2===1) {
-                location.href="/Gift index look.html";
+                location.href="Gift index look.html";
                 sessionStorage.setItem('title','敌人显示，寻路，与攻击');
                 sessionStorage.setItem('text1',"我们的想法：三个分别存距离，type，ID的列表，用来按序打印墙壁与敌人。");
                 sessionStorage.setItem('text2',"具体的实现：距离升序按排列，在遍历距离列表时按id打印位置，type打印类别，id指在第几度扫到了敌人。");
@@ -122,7 +122,7 @@
             };
             document.getElementById("a5").onclick = function() {
             if(bcpt3===1) {
-                location.href="/Gift index look.html";
+                location.href="Gift index look.html";
                 sessionStorage.setItem('title','深搜与广搜 DFS&BFS');
                 sessionStorage.setItem('text1',"DFS（深度优先搜索）在课上我们初步了解了深搜的逻辑，知道了它是一种图算法，我们曾幽默的说它是“一条路走到黑的类型”，简要来说是对每一个可能的分支路径深入到不能再深入为止，而且每个节点只能访问一次。");
                 sessionStorage.setItem('text2',"BFS（宽度优先搜索）在课上您用了画图的方法让我们了解了宽搜，我们曾说宽搜像只章鱼，这个比喻很生动形象。");
@@ -131,7 +131,7 @@
                 sessionStorage.setItem('picture','p5');
             } else {
                 if(bcpt1 === 1 && bcpt2 === 1) {
-                location.href="/Gift Game.html";
+                location.href="Gift Game.html";
                 sessionStorage.setItem('id','猜拳');
                 } else {
                     alert("请先解锁前面的关卡")
@@ -140,7 +140,7 @@
             };        
             document.getElementById("a6").onclick = function() {
             if(bcpt3===1) {
-                location.href="/Gift index look.html";
+                location.href="Gift index look.html";
                 sessionStorage.setItem('title','致谢');
                 sessionStorage.setItem('text1',"谢谢您无私的教导，细心的指点，您的一个一个项目打开了我们的思路，告诉了我们很多编程时的技巧，也为我们找到了一些资源，例如：学习网站编辑的mozilla，一些帮助理解算法的思想和实现的书籍，一些好的片子。这都令我们收获颇丰。");
                 sessionStorage.setItem('text2',"与您上课时总感觉时间过得很快，整节课就像聊天一样，使我们感到很放松与享受，课程也很有意思，老师您总能找到易理解又生动的方法为我们解释各种问题，拆解项目中的一个一个难点。");

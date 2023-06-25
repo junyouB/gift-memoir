@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link rel="stylesheet" href="/Gift website.css">
+        <link rel="stylesheet" href="Gift website.css">
         <style>
             html {
               font-family: sans-serif;
@@ -109,11 +109,11 @@
                 }
                 function retrun_to_gift1(){
                     sessionStorage.setItem('bk','1');
-                    location.href='/Gift index.html'
+                    location.href='Gift index.html'
                 }
                 function retrun_to_gift2(){
                     sessionStorage.setItem('bk','0');
-                    location.href='/Gift index.html'
+                    location.href='Gift index.html'
                 }
             } else if (type === '猜数字2') {
                 let randomNumber = Math.floor(Math.random() * 100) + 1;
@@ -180,11 +180,11 @@
                 }
                 function retrun_to_gift1(){
                     sessionStorage.setItem('ck','1');
-                    location.href='/Gift index.html'
+                    location.href='Gift index.html'
                 }
                 function retrun_to_gift2(){
                     sessionStorage.setItem('ck','0');
-                    location.href='/Gift index.html'
+                    location.href='Gift index.html'
                 }
             } else if(type === '猜拳') {
                 const AI = document.querySelector('.guesses');
@@ -359,11 +359,11 @@
                 }
                 function ret(){
                     sessionStorage.setItem('dk','1');
-                    location.href='/Gift index.html';
+                    location.href='Gift index.html';
                 }
                 function retrun_to_gift2(){
                     sessionStorage.setItem('dk','0');
-                    location.href='/Gift index.html';
+                    location.href='Gift index.html';
                 }
             }
             };
